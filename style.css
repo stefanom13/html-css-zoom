@@ -14,29 +14,130 @@ body {
 
 .debug {
   display: flex;
-  flex-direction: column;
   height: 100vh;
+  flex-direction: column-reverse;
 }
 
 /* header  */
 
+header {
+  height: 70px;
+  background-color: gray;
+  /* padding: 5px; */
+}
+
 .header-nav {
-  height: 50px;
-  border: 1px solid blueviolet;
-  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-reg {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+.nav-reg ul {
+  /* (per nascondere ul e far vedere quello che ha al suo interno)  */
+  display: contents;
+  list-style: none;
+  font-size: 13px;
+  font-weight: 700;
+  color: whitesmoke;
+}
+.nav-reg ul li i {
+  display: block;
+  margin-bottom: 3px;
+  text-align: center;
+  font-size: 20px;
+}
+.micro {
+  margin-left: 8px;
+}
+
+.angle i {
+  font-size: 5px;
+}
+
+.nav-info {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+.nav-info ul {
+  /* (per nascondere ul e far vedere quello che ha al suo interno)  */
+  display: contents;
+  list-style: none;
+  font-size: 13px;
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+.nav-info ul li i {
+  display: block;
+  margin-bottom: 3px;
+  text-align: center;
+  font-size: 20px;
+}
+.green-color-icon {
+  color: green;
+}
+.text-white {
+  color: white;
+}
+
+.button-end-call {
+  background-color: lightslategrey;
+  color: red;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.button-end-call .text-call {
+  padding: 10px 15px;
+  color: red;
+  font-weight: 700;
+  font-size: 13px;
 }
 
 /* main  */
 
 .main-container {
   border: 1px solid rgb(255, 0, 81);
-  padding: 20px;
+  padding: 20px 20px;
   flex-grow: 1;
+  height: 100%;
+}
+
+.cont-foto {
+  border: 2px solid lightseagreen;
 }
 
 /* footer  */
+.footer {
+  border: 1px solid green;
+}
 
 .nav-footer {
-  height: 30px;
-  border: 1px solid green;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 25px;
+  align-items: center;
+}
+.nav-footer {
+  gap: 10px;
+  padding: 5px;
+}
+
+.nav-footer .icon--footer {
+  /* (per nascondere ul e far vedere quello che ha al suo interno)  */
+  display: contents;
+}
+
+.icon--footer i {
+  background-color: lightslategrey;
+  border-radius: 100px;
+  padding: 5px 10px;
+  font-size: 13px;
+  color: whitesmoke;
 }
