@@ -1,0 +1,42 @@
+/* generals  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* debug  */
+
+.debug {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* header  */
+
+.header-nav {
+  height: 50px;
+  border: 1px solid blueviolet;
+  padding: 5px;
+}
+
+/* main  */
+
+.main-container {
+  border: 1px solid rgb(255, 0, 81);
+  padding: 20px;
+  flex-grow: 1;
+}
+
+/* footer  */
+
+.nav-footer {
+  height: 30px;
+  border: 1px solid green;
+}
