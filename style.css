@@ -10,6 +10,10 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+img{
+    max-width: 100%;
+}
+
 /* debug  */
 
 .debug {
@@ -21,9 +25,8 @@ body {
 /* header  */
 
 header {
-  height: 70px;
   background-color: gray;
-  /* padding: 5px; */
+  padding: 5px;
 }
 
 .header-nav {
@@ -106,25 +109,52 @@ header {
 .main-container {
   border: 1px solid rgb(255, 0, 81);
   flex-grow: 1;
-  padding: 70px 80px;
+ 
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
-  gap: 5px 2px;
+  gap: 4px 2px;
   justify-content: center;
 }
 
 .row-img {
   border: 2px solid lightseagreen;
-  min-height: 100px;
+  min-height: 110px;
   aspect-ratio: 1.7;
+}
+
+.web-cam{
+    position: relative;
+    height: 100px;
+    
+    
+
+}
+
+.web-cam .img- {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.info--web-cam{
+    position: absolute;
+    bottom: 3px;
+    left: 1px;
+    background-color: yellowgreen;
+    color: tomato;
+    padding: 3px 5px;
+    font-size: 12px;
+
 }
 
 /* footer  */
 .footer {
   border: 1px solid green;
-  height: 30px;
+  
 }
 
 .nav-footer {
@@ -132,14 +162,11 @@ header {
   justify-content: flex-end;
   min-height: 25px;
   align-items: center;
-}
-.nav-footer {
   gap: 10px;
-  padding: 5px;
 }
 
 .nav-footer .icon--footer {
-  /* (per nascondere ul e far vedere quello che ha al suo interno)  */
+  /* (per nascondere div e far vedere quello che ha al suo interno)  */
   display: contents;
 }
 
@@ -150,3 +177,5 @@ header {
   font-size: 13px;
   color: whitesmoke;
 }
+
+.
