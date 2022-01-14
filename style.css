@@ -10,8 +10,8 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-img{
-    max-width: 100%;
+img {
+  max-width: 100%;
 }
 
 /* debug  */
@@ -109,7 +109,7 @@ header {
 .main-container {
   border: 1px solid rgb(255, 0, 81);
   flex-grow: 1;
- 
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -120,62 +120,53 @@ header {
 
 .row-img {
   border: 2px solid lightseagreen;
-  min-height: 110px;
-  aspect-ratio: 1.7;
+  min-height: 100px;
+  aspect-ratio: 1.5;
 }
 
-.web-cam{
-    position: relative;
-    height: 100px;
-    
-    
-
+.web-cam {
+  position: relative;
+  height: 100px;
+}
+.web-cam > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-.web-cam .img- {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-
-}
-
-.info--web-cam{
-    position: absolute;
-    bottom: 3px;
-    left: 1px;
-    background-color: yellowgreen;
-    color: tomato;
-    padding: 3px 5px;
-    font-size: 12px;
-
+.info--web-cam {
+  position: absolute;
+  bottom: 3px;
+  left: 1px;
+  background-color: yellowgreen;
+  color: tomato;
+  padding: 3px 5px;
+  font-size: 12px;
 }
 
 /* footer  */
-.footer {
-  border: 1px solid green;
-  
+
+.rel {
+  position: relative;
 }
 
-.nav-footer {
-  display: flex;
-  justify-content: flex-end;
-  min-height: 25px;
-  align-items: center;
-  gap: 10px;
+.icon-footer {
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 
-.nav-footer .icon--footer {
-  /* (per nascondere div e far vedere quello che ha al suo interno)  */
-  display: contents;
+.bottom {
+  padding: 5px 8px;
+
+  display: inline-block;
+  background-color: gray;
+  border-radius: 999px;
 }
 
-.icon--footer i {
-  background-color: lightslategrey;
-  border-radius: 100px;
-  padding: 5px 10px;
-  font-size: 13px;
-  color: whitesmoke;
+.bottom-speak {
+  background-color: gray;
+  color: white;
+  font-size: 10px;
 }
-
-.
