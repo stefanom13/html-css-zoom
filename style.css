@@ -26,7 +26,6 @@ img {
 
 header {
   background-color: gray;
-  padding: 5px;
 }
 
 .header-nav {
@@ -77,6 +76,10 @@ header {
   padding: 10px;
 }
 
+.left-bt {
+  /* padding-bottom: 5px; */
+}
+
 .nav-info ul li i {
   display: block;
   margin-bottom: 3px;
@@ -107,8 +110,9 @@ header {
 /* main  */
 
 .main-container {
-  border: 1px solid rgb(255, 0, 81);
+  border: 1px solid;
   flex-grow: 1;
+  background-color: black;
 
   display: flex;
   flex-wrap: wrap;
@@ -169,4 +173,21 @@ header {
   background-color: gray;
   color: white;
   font-size: 10px;
+}
+
+/* queery  */
+
+@media screen and (max-width: 1063px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .debug {
+    display: flex;
+    height: 100%;
+    flex-direction: column-reverse;
+    background-color: blue;
+  }
 }
