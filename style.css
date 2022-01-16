@@ -26,6 +26,7 @@ img {
 
 header {
   background-color: gray;
+  height: 65px;
 }
 
 .header-nav {
@@ -177,7 +178,7 @@ header {
 
 /* queery  */
 
-@media screen and (max-width: 1063px) {
+/* @media screen and (max-width: 1063px) {
   * {
     margin: 0;
     padding: 0;
@@ -190,4 +191,4 @@ header {
     flex-direction: column-reverse;
     background-color: blue;
   }
-}
+} */
